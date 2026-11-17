@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flötende Kröten – Spielleitung</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" id="brand" title="Zum Monitoring">🐸 Flötende Kröten</a>
+    <nav class="tabs" id="tabs">
+      <button data-tab="monitor" class="active">Monitoring</button>
+      <button data-tab="leaderboard">Rangliste</button>
+      <button data-tab="players">Spieler</button>
+      <button data-tab="transactions">Transaktionen</button>
+      <button data-tab="nodes">Stationen</button>
+      <button data-tab="settings">Spieleinstellungen</button>
+      <button data-tab="games">Spiele</button>
+    </nav>
+    <div class="game-state-bar" id="game-state-bar"></div>
+    <div class="status" id="status"></div>
+  </header>
+
+  <main>
+    <section id="tab-monitor" class="tab active"></section>
+    <section id="tab-leaderboard" class="tab"></section>
+    <section id="tab-players" class="tab"></section>
+    <section id="tab-transactions" class="tab"></section>
+    <section id="tab-nodes" class="tab"></section>
+    <section id="tab-games" class="tab"></section>
+    <section id="tab-settings" class="tab"></section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <div id="flash-overlay" class="flash-overlay" hidden></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
