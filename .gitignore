@@ -3,3 +3,4 @@ firmware/.vscode/
 server/node_modules/
 server/data/
 *.log
+*.pdf
